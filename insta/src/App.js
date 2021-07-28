@@ -22,10 +22,10 @@ function App() {
       <Route path="/confirmation">
      <Confirmation />
       </Route>
-      <Route path ="/About">
+      <Route path ="/about">
         <About />
       </Route>
-      <Route path ="/EditProfile">
+      <Route path ="/editprofile">
         <EditProfile />
       </Route>
      </Switch>

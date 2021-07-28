@@ -3,7 +3,7 @@ const app = express();
 const authenticate = require('./authenticate.js')
 const cookieParser = require ("cookie-parser");
 app.use(cookieParser());
-app.get("/about", authenticate ,function(req,res){
+app.get("/aboutbackend", authenticate ,function(req,res){
 
     res.send(req.rootUser);
 });

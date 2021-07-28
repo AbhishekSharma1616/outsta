@@ -12,7 +12,7 @@ function EditProfile() {
     const [user,setUser]= useState({});
     const callAboutPage= async()=>{
         try{
-          const res = await fetch('/about', {
+          const res = await fetch('/aboutbackend', {
             method:"GET",
             headers:{
               Accept:"application/json",
