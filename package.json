@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node app.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix insta && npm run build --prefix insta"
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix insta && npm run build --prefix insta"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.12.13",
     "nodemailer-sendgrid-transport": "^0.2.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "react-router-dom": "^5.2.0"
   }
 }
