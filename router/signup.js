@@ -33,7 +33,7 @@ app.post('/signup',async function(req, res){
                             api_key: "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"
                         },
                      }));
-                    var mailOptions = { from: 'kushagradevgon@gmail.com', to: adduser.mail, subject: 'Account Verification Token', text: 'Hello,\n\n' + 'Please verify your account by clicking the link: \nhttp:\/\/' + "LOCALHOST:5000" + '\/confirmation\/'+'token\=' + token.token + '\n' };
+                    var mailOptions = { from: 'kushagradevgon@gmail.com', to: adduser.mail, subject: 'Account Verification Token', text: 'Hello,\n\n' + 'Please verify your account by clicking the link: \nhttp:\/\/' + "outsta.herokuapp.com" + '\/confirmation\/'+'token\=' + token.token + '\n' };
                     transporter.sendMail(mailOptions, function (err) {
                         if (err) { return res.status(500).send({ msg: err.message }); }
                         res.status(200).send({message:'User Created & A verification email has been sent'});
