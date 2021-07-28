@@ -10,9 +10,13 @@ app.use(require('./router/updateinfo.js'));
 app.use(require('./router/delete_acc.js'))
 
 
-const PORT =process.env.PORT || 5000
-if(process.env.NODE_ENV ="production"){
-    app.use(express.static("insta/build"))
+const PORT =process.env.PORT || 5000;
+if(process.env.NODE_ENV =="production"){
+    app.use(express.static("insta/build"));
+    const path = require("path");
+    app.get("*", (req,res)=>{
+        res.sendFile(path.resolve(__dirname,'insta','build','index.html'));
+    })
 }
 
 
