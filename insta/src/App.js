@@ -6,6 +6,7 @@ import Login from './components/login';
 import EditProfile from "./components/components01/editProfile"
 import Confirmation from'./components/confirmation';
 import About from './components/components01/about'
+import Home from './components/components01/post_page'
 function App() {
   return (
     <Router >
@@ -27,6 +28,9 @@ function App() {
       </Route>
       <Route path ="/about">
         <About />
+      </Route>
+      <Route path ="/home">
+        <Home />
       </Route>
       <Route path ="/editprofile">
         <EditProfile />
